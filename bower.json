@@ -1,6 +1,26 @@
 {
   "name": "pianoprojectrit-site",
-  "version": 0.0.0,
+  "version": "0.0.0",
+  "main": "dist/index.html",
+  "homepage": "https://github.com/regdoug/honors-d3-housing",
+  "authors": [
+    "regdoug <pierce.reginald@gmail.com>"
+  ],
+  "description": "Housing Selection UI using d3.js",
+  "license": "none",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "/scss",
+    "/css",
+    "/js",
+    "/img",
+    "/*.*"
+  ],
   "devDependencies": {
     "foundation": "zurb/bower-foundation"
   }

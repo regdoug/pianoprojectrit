@@ -36,7 +36,7 @@ module.exports = function(grunt) {
         options: {
           replacements: [
             {pattern: /{{\s*VERSION\s*}}/g, replacement: '<%= pkg.version %>'},
-            {pattern: /\/bower_components\/foundation\//g, replacement: '<%= cdn %>foundation/<%= found.version %>/'},
+            {pattern: /\/bower_components\/(foundation|modernizr)\//g, replacement: '<%= cdn %>foundation/<%= found.version %>/'},
             {pattern: '/bower_components/jquery/dist/jquery.min.js', replacement: '//ajax.googleapis.com/ajax/libs/jquery/<%= jq.version %>/jquery.min.js'},
             {pattern: /\/bower_components/g, replacement: '/vendor'},
             {pattern: /^.*="\/js\/(?!app).*\n/gm, replacement: ''}
@@ -68,7 +68,7 @@ module.exports = function(grunt) {
     copy: {
       dist: {
         files: [
-          {src: 'index.html', dest: 'dist/'},
+          {src: ['index.html', 'robots.txt'], dest: 'dist/'},
           {src: 'css/app.css', dest: 'dist/'},
           {src: 'img/*', dest: 'dist/', expand:true},
           {expand: true, cwd: 'bower_components/', src: ['d3/d3.js', 'd3-tip/index.js'], dest: 'dist/vendor/'}
