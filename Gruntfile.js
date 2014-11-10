@@ -31,7 +31,7 @@ module.exports = function(grunt) {
     'string-replace': {
       dist: {
         files: {
-          'dist/':'dist/index.html'
+          'dist/':['dist/index.html','dist/about.html']
         },
         options: {
           replacements: [
@@ -68,7 +68,7 @@ module.exports = function(grunt) {
     copy: {
       dist: {
         files: [
-          {src: ['index.html', 'robots.txt'], dest: 'dist/'},
+          {src: ['index.html', 'robots.txt', 'about.html'], dest: 'dist/'},
           {src: 'css/app.css', dest: 'dist/'},
           {src: 'img/*', dest: 'dist/', expand:true},
           {expand: true, cwd: 'bower_components/', src: ['d3/d3.js', 'd3-tip/index.js'], dest: 'dist/vendor/'}

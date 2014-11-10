@@ -38,3 +38,24 @@
 //   "foundation/components/type",
 //   "foundation/components/offcanvas",
 //   "foundation/components/visibility";
+
+.staggered {
+    .columns {
+        max-width: rem-calc(720);
+    }
+    .panel { width: 100% }
+    .columns:nth-child(odd) {
+            float:left;
+        img.profile {
+            float: left;
+            margin-right: rem-calc(10);
+        }
+    }
+    .columns:nth-child(even) {
+            float:right;
+        img.profile {
+            float:right;
+            margin-left: rem-calc(10);
+        }
+    }
+}
