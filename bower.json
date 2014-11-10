@@ -1,6 +1,6 @@
 {
   "name": "pianoprojectrit-site",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "main": "dist/index.html",
   "homepage": "https://github.com/regdoug/honors-d3-housing",
   "authors": [
